@@ -1,5 +1,17 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 15rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* background: #e3d; */
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav a {
+  padding: 0 10px;
 }
 
 .main {
@@ -61,8 +73,7 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
