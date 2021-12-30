@@ -1,18 +1,6 @@
 .container {
   padding: 0 15rem;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  /* background: #e3d; */
-  align-items: center;
-}
-.nav {
-  display: flex;
-}
-.nav a {
-  padding: 0 10px;
-}
 
 .main {
   min-height: 100vh;
@@ -22,22 +10,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
 }
 
 .title a {
