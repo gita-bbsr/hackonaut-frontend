@@ -1,28 +1,32 @@
-import styles from "../styles/Navbar.module.css";
-import Image from "next/image";
+// import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="container fixed w-full z-10 left-1/2 -translate-x-1/2 px-4">
-      <div className="flex justify-between items-center">
+    <header className="w-full text-center mx-auto">
+      <nav className="p-4 space-x-5 ">
         <Link href="/">
-          <a>
-            <Image src="/vercel.svg" width={120} height={80} />
-          </a>
+          <a>Home</a>
         </Link>
-        <nav>
-          <Link href="/contact">
-            <a>Contact us</a>
-          </Link>
-          <Link href="/register">
-            <a className="px-3">Registor</a>
-          </Link>
-          <Link href="/about">
-            <a>About us</a>
-          </Link>
-        </nav>
-      </div>
+        <Link href="register">
+          <a>Registration</a>
+        </Link>
+        <Link href="#speaker">
+          <a>Speaker</a>
+        </Link>
+        <Link href="#session">
+          <a>Session</a>
+        </Link>
+        <Link href="#topics">
+          <a>Topics</a>
+        </Link>
+        <Link href="#about">
+          <a>About</a>
+        </Link>
+        <Link href="/contact-us">
+          <a>Contact Us</a>
+        </Link>
+      </nav>
     </header>
   );
 };
