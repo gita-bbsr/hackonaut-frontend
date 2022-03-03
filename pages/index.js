@@ -51,7 +51,7 @@ export default function Home() {
         <>
             <div className="h-32"></div>
             <main className="text-center p-4 overflow-hidden">
-                <h1 className="lg:text-9xl sm:text-7xl text-5xl font-extrabold tracking-wider">HACK'O'NOUT</h1>
+                <h1 className="lg:text-9xl sm:text-7xl text-5xl font-extrabold tracking-wider">HACK‘O’NOUT</h1>
                 <div className="flex items-center justify-center space-x-2">
                     <p className="lg:text-5xl sm:text-2xl text-xl font-extrabold">DRIVE WITH INOVATION</p>
                     <span className="lg:w-auto w-8">
