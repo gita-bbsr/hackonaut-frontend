@@ -95,7 +95,7 @@ function FeatureWeb(props) {
     const leftComponent = (
         <div className="text-left grid grid-cols-2 gap-4">
             <div>
-                <Image src={value.img} />
+                <Image src={value.img} alt={value.head} />
             </div>
             <div>
                 <h2 className="lg:text-6xl text-3xl font-extrabold">{value.head}</h2>
@@ -110,7 +110,7 @@ function FeatureWeb(props) {
                 <p className=" text-3xl font-extrabold mx-auto mt-4 text-justify ">{value.main}</p>
             </div>
             <div>
-                <Image src={value.img} />
+                <Image src={value.img} alt={value.head} />
             </div>
         </div>
     );
