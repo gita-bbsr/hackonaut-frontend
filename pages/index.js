@@ -55,11 +55,11 @@ export default function Home() {
                 <div className="flex items-center justify-center space-x-2">
                     <p className="lg:text-5xl sm:text-2xl text-xl font-extrabold">DRIVE WITH INOVATION</p>
                     <span className="lg:w-auto w-8">
-                        <Image src={rocketPic} />
+                        <Image src={rocketPic} alt="rocket.png" />
                     </span>
                 </div>
                 <div className="mx-auto max-w-7xl lg:scale-125 md:scale-100 scale-110">
-                    <Image src={hero} />
+                    <Image src={hero} alt="hero-img" />
                 </div>
 
                 <div>
@@ -80,7 +80,7 @@ function FeatureMoblie(props) {
     return (
         <div className="text-center">
             <div className="w-72 md:w-96 mx-auto">
-                <Image src={value.img} />
+                <Image src={value.img} alt={value.head} />
             </div>
             <div>
                 <h2 className="lg:text-6xl text-3xl font-extrabold">{value.head}</h2>
