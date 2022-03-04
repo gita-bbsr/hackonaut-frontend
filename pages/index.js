@@ -1,5 +1,10 @@
 import Image from "next/image";
+
 import rocketPic from "../public/rocket.png";
+import msg from "../public/msg.png";
+import idea from "../public/idea.png";
+import write from "../public/write.png";
+
 import hero from "../public/svg/hero.svg";
 import friends from "../public/svg/friends.svg";
 import rocketEntry from "../public/svg/rocket-entrie.svg";
@@ -50,7 +55,7 @@ export default function Home() {
     return (
         <>
             <div className="h-32"></div>
-            <main className="text-center p-4 overflow-hidden">
+            <section className="container mx-auto text-center p-4 overflow-hidden">
                 <h1 className="lg:text-9xl sm:text-7xl text-5xl font-extrabold tracking-wider">HACK‘O’NOUT</h1>
                 <div className="flex items-center justify-center space-x-2">
                     <p className="lg:text-5xl sm:text-2xl text-xl font-extrabold">DRIVE WITH INOVATION</p>
@@ -58,8 +63,19 @@ export default function Home() {
                         <Image src={rocketPic} alt="rocket.png" />
                     </span>
                 </div>
-                <div className="mx-auto max-w-7xl lg:scale-125 md:scale-100 scale-110">
-                    <Image src={hero} alt="hero-img" />
+                <div className="mx-auto max-w-7xl relative">
+                    <span className="absolute left-0 top-[10%] xl:w-40 xl:h-40 sm:w-20 sm:h-20 w-10 h-10">
+                        <Image src={msg} alt="msg" />
+                    </span>
+                    <span className="absolute left-[9%] top-[18%] xl:w-40 xl:h-40 sm:w-20 sm:h-20 w-10 h-10">
+                        <Image src={idea} alt="idea" />
+                    </span>
+                    <span className="absolute right-0 top-[12%] xl:w-40 xl:h-40 sm:w-20 sm:h-20 w-10 h-10">
+                        <Image src={write} alt="write" />
+                    </span>
+                    <span>
+                        <Image src={hero} alt="hero-img" className="lg:scale-125 scale-125" />
+                    </span>
                 </div>
 
                 <div>
@@ -68,9 +84,14 @@ export default function Home() {
                         denims and hoodies, hop into SOMETHING COMFY; let’s #BUILD-SOMETHING-NEW
                     </h2>
                 </div>
-                {/* feature */}
-                <div className="lg:block flex flex-col space-y-8">{size.width < 1024 ? featureMoblieList : featureWebList}</div>
-            </main>
+            </section>
+            {/* feature */}
+            <section className="relative">
+                <div className="container mx-auto z-20">
+                    <div className="lg:block flex flex-col space-y-8">{size.width < 1024 ? featureMoblieList : featureWebList}</div>
+                </div>
+                <div id="background" className="absolute top-0 right-0 bg-blue-200 w-1/2 h-full -z-10 lg:visible invisible"></div>
+            </section>
         </>
     );
 }
@@ -82,7 +103,7 @@ function FeatureMoblie(props) {
             <div className="w-72 md:w-96 mx-auto">
                 <Image src={value.img} alt={value.head} />
             </div>
-            <div>
+            <div className="p-5">
                 <h2 className="lg:text-6xl text-3xl font-extrabold">{value.head}</h2>
                 <p className="font-extrabold mx-auto mt-4 text-justify sm:px-20">{value.main}</p>
             </div>
@@ -93,7 +114,7 @@ function FeatureMoblie(props) {
 function FeatureWeb(props) {
     const value = props.valueObj;
     const leftComponent = (
-        <div className="text-left grid grid-cols-2 gap-4">
+        <div className="text-left grid grid-cols-2 gap-4 ">
             <div>
                 <Image src={value.img} alt={value.head} />
             </div>
@@ -105,7 +126,7 @@ function FeatureWeb(props) {
     );
     const rightComponent = (
         <div className="text-left grid grid-cols-2 gap-4">
-            <div>
+            <div className="">
                 <h2 className="lg:text-6xl text-3xl font-extrabold">{value.head}</h2>
                 <p className=" text-3xl font-extrabold mx-auto mt-4 text-justify ">{value.main}</p>
             </div>
