@@ -10,7 +10,7 @@ const Navbar = () => {
     console.log(e);
   };
   return (
-    <header className="w-full fixed flex justify-around items-center text-center mx-auto text-slate-200 p-2">
+    <header className="w-full fixed flex justify-evenly items-center text-center mx-auto text-slate-200 p-2" style={{ display: "none" }}>
       <div>
         <span>
           <Image src={logo} width={120} />
