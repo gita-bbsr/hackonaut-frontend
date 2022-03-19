@@ -10,20 +10,20 @@ const gallery = () => {
     <div className="relative grid lg:grid-cols-3 my-40 z-20 gap-10">
       <div>
         <div className="w-full  mx-auto">
-          <Image src={lead} />
+          <Image src={lead} className="lead" />
         </div>
         <p>Lorem ipsum dolor sit amet consectetur.</p>
       </div>
       <div className="lg:relative md:top-24 ">
         <div className="w-full mx-auto">
-          <Image src={classroom} />
+          <Image src={classroom} alt="classroom" />
         </div>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
       </div>
       <div>
         <div className="w-full mx-auto">
-          <Image src={team} />
+          <Image src={team} className="team" />
         </div>
 
         <p>Lorem ipsum dolor sit amet.</p>
@@ -35,7 +35,7 @@ const gallery = () => {
 const galleryText = () => {
   return (
     <>
-      <Image src={write} />
+      <Image src={write} alt="erwe" />
     </>
   );
 };

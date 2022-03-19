@@ -13,7 +13,7 @@ const Navbar = () => {
     <header className="w-full fixed flex justify-evenly items-center text-center mx-auto text-slate-200 p-2" style={{ display: "none" }}>
       <div>
         <span>
-          <Image src={logo} width={120} />
+          <Image src={logo} width={120} alt="logo" />
         </span>
       </div>
       <nav className="p-4 space-x-5 ">
@@ -33,7 +33,7 @@ const Navbar = () => {
           <a>Team</a>
         </Link>
         <Link href="/faq">
-          <a>FAQ's</a>
+          <a>FAQ&rsquo;s</a>
         </Link>
       </nav>
       <div>

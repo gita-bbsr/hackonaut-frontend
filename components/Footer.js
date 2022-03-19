@@ -32,7 +32,7 @@ const Footer = () => {
           Help
           <nav className="flex flex-col">
             <Link href="/faq">
-              <a>FAQ's</a>
+              <a>FAQ&rsquo;s</a>
             </Link>
 
             <Link href="/contact">

@@ -37,7 +37,7 @@ const ListMembers = (props) => {
   const str = `relative col-span-1`;
   return (
     <div className={str}>
-      <Image src="https://www.w3schools.com/howto/img_avatar.png" width={250} height="250" />
+      <Image src="https://www.w3schools.com/howto/img_avatar.png" width={250} height="250" alt={name} />
       <h4 className="py-2">{name}</h4>
       <p className="px-6">{responsibility}</p>
     </div>

@@ -7,16 +7,16 @@ const sponsors = () => {
       {/* sponsour list grid */}
       <div className="py-20 grid md:grid-cols-[repeat(4,minmax(150px,_1fr))] grid-cols-2 grid-flow-row gap-4 items-center">
         <div className="relative">
-          <Image src="https://www.w3schools.com/howto/img_avatar.png" width={250} height={300} layout="intrinsic" />
+          <Image src="https://www.w3schools.com/howto/img_avatar.png" width={250} height={300} layout="intrinsic" alt="spon" />
         </div>
         <div className="relative">
-          <Image src="https://www.w3schools.com/howto/img_avatar.png" width={400} height={200} layout="intrinsic" />
+          <Image src="https://www.w3schools.com/howto/img_avatar.png" width={400} height={200} layout="intrinsic" alt="spon" />
         </div>
         <div className="relative">
-          <Image src="https://www.w3schools.com/howto/img_avatar.png" width={100} height={200} layout="intrinsic" />
+          <Image src="https://www.w3schools.com/howto/img_avatar.png" width={100} height={200} layout="intrinsic" alt="spon" />
         </div>
         <div className="relative">
-          <Image src="https://www.w3schools.com/howto/img_avatar.png" width={400} height={270} layout="intrinsic" />
+          <Image src="https://www.w3schools.com/howto/img_avatar.png" width={400} height={270} layout="intrinsic" alt="spon" />
         </div>
       </div>
     </section>
