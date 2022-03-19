@@ -14,7 +14,7 @@ const gallery = () => {
         </div>
         <p>Lorem ipsum dolor sit amet consectetur.</p>
       </div>
-      <div className="md:relative md:top-24 ">
+      <div className="lg:relative md:top-24 ">
         <div className="w-full mx-auto">
           <Image src={classroom} />
         </div>

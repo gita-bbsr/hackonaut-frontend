@@ -4,7 +4,7 @@ import Gallery from "./Gallery.js";
 import lineImg from "../public/image/line.svg";
 const head = () => {
   return (
-    <section id="head-section" className="text-center p-44 bg-gradient-to-br from-[#12141D] to-slate-800 text-white">
+    <section id="head-section" className="text-center lg:p-44 sm:p-24 p-8 bg-gradient-to-br from-[#12141D] to-slate-800 text-white">
       <div className="relative flex flex-col items-center z-20 space-y-4">
         <h1>
           Open Idea <span>Hackathon</span>

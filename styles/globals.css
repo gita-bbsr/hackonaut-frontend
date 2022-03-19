@@ -23,13 +23,16 @@
     @apply block;
   }
   h1 {
-    @apply text-7xl font-semibold;
+    @apply 2xl:text-9xl md:text-7xl sm:text-6xl text-4xl font-semibold;
   }
   h2 {
-    @apply text-6xl font-semibold;
+    @apply 2xl:text-8xl md:text-6xl text-4xl font-semibold;
   }
   h3 {
-    @apply text-4xl font-semibold;
+    @apply 2xl:text-6xl md:text-4xl text-2xl font-semibold;
+  }
+  h4 {
+    @apply 2xl:text-2xl sm:text-lg text-base font-bold;
   }
 }
 
