@@ -23,7 +23,7 @@
     @apply block;
   }
   h1 {
-    @apply 2xl:text-9xl md:text-7xl sm:text-6xl text-4xl font-semibold;
+    @apply 2xl:text-9xl md:text-7xl sm:text-6xl text-5xl font-semibold;
   }
   h2 {
     @apply 2xl:text-8xl md:text-6xl text-4xl font-semibold;
@@ -57,4 +57,51 @@ a {
 }
 #head-section span {
   @apply text-[#F6CB60];
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  transition: all 0.25s;
+}
+.hamburger [class*="-bun"] {
+  background: #fff;
+}
+.hamburger__top-bun,
+.hamburger__bottom-bun {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger:hover [class*="-bun"] {
+  background: #eee;
+}
+
+.hamburger__top-bun {
+  transform: translateY(-5px);
+}
+
+.hamburger__bottom-bun {
+  transform: translateY(3px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(-1px);
+}
+
+.open .hamburger__top-bun {
+  transform: rotate(45deg) translateY(0px);
+}
+
+.open .hamburger__bottom-bun {
+  transform: rotate(-45deg) translateY(0px);
 }

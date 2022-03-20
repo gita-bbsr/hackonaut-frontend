@@ -1,10 +1,11 @@
 import styles from "../styles/Footer.module.css";
 import Link from "next/link";
+// TODO: Footer update
 const Footer = () => {
   return (
-    <footer className="text-center p-20 bg-gradient-to-br from-[#12141D] to-slate-800 text-white">
-      <div className="flex justify-around text-left">
-        <div>
+    <footer className="text-center lg:p-20 p-8 bg-gradient-to-br from-[#12141D] to-slate-800 text-white">
+      <div className="grid md:grid-cols-4  grid-cols-2 justify-around md:text-left text-center gap-8">
+        <div className="lg:col-span-1 col-span-2">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div>Link of socal media</div>
         </div>
@@ -46,7 +47,10 @@ const Footer = () => {
             </Link>
           </nav>
         </div>
-        <div>Venue</div>
+        <div className="md:col-span-1 col-span-2">
+          <h4>Venue</h4>
+          <div id="map" className="w-full h-60"></div>
+        </div>
       </div>
       <div>
         <p>@copyright 2022, All rights Reserved by Hackonaut | Gita Autonomous Collage</p>{" "}

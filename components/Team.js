@@ -20,23 +20,17 @@ const team = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure sequi autem excepturi reprehenderit nostrum, soluta culpa consequatur maiores ipsa at, porro sapiente
         voluptas aperiam ullam quasi facilis minus non, obcaecati ad!
       </p>
-      {/* Team grid display */}
-      <div className="py-40 grid sm:grid-cols-[repeat(3,minmax(150px,_250px))] grid-flow-row justify-evenly gap-20 md:px-28">{listMembers}</div>
+
+      <div className="py-40 grid sm:grid-cols-[repeat(3,minmax(150px,_250px))] grid-cols-2 grid-flow-row justify-evenly gap-20 md:px-28">{listMembers}</div>
     </section>
   );
 };
 
 const ListMembers = (props) => {
   const { id, name, responsibility } = props.data;
-  // TODO: grid pyramid shape kind a tough to solve
-  /**************************/
-  let gridNumber = 2 * id - 1;
-  if (id > 5) gridNumber = id % 2 == 0 ? id / 2 - 1 : parseInt(id / 2 + 1);
-  console.log(gridNumber);
-  /**************************/
-  const str = `relative col-span-1`;
+
   return (
-    <div className={str}>
+    <div className="relative col-span-1">
       <Image src="https://www.w3schools.com/howto/img_avatar.png" width={250} height="250" alt={name} />
       <h4 className="py-2">{name}</h4>
       <p className="px-6">{responsibility}</p>

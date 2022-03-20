@@ -7,7 +7,7 @@ const about = () => {
         <div className=" w-[200px] absolute sm:bottom-6 sm:left-6 bottom-2 left-2 z-10 text-justify">
           <h4 className="text-white sm:p-8 p-6 bg-blue-600">It&rsquo;s a 24 hours and 3 day long Hackathon</h4>
         </div>
-        <Image src={laptop} width={400} height={500} sizes="320 640 750" layout="responsive" alt="laptop-image" />
+        <Image src={laptop} alt="laptop-image" />
       </div>
 
       <div className="space-y-6">

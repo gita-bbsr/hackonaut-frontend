@@ -1,22 +1,35 @@
-// import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useState } from "react";
 
-import logo from "../public/logo/HACKONAUT.svg";
+import logo from "../public/logo/logo-light.png";
 
 const Navbar = () => {
+  const [showMe, setShowMe] = useState(false);
   const onScreenChange = (e) => {
     console.log(e);
   };
+  const navToggle = () => {
+    setShowMe(!showMe);
+  };
+
   return (
-    <header className="w-full fixed flex justify-evenly items-center text-center mx-auto text-slate-200 p-2" style={{ display: "none" }}>
+    <header className="w-full fixed flex lg:justify-evenly justify-between items-center text-center mx-auto text-slate-200 px-2 py-2 bg-[#12141D] z-40">
       <div>
-        <span>
-          <Image src={logo} width={120} alt="logo" />
+        <span className="relative">
+          <Image src={logo} width={300} height={71} alt="logo" />
         </span>
       </div>
-      <nav className="p-4 space-x-5 ">
+      <button
+        id="menuBtn"
+        className={showMe ? "hamburger block md:hidden focus:outline-none open ml-10" : "ml-10 hamburger block md:hidden focus:outline-none"}
+        type="button"
+        onClick={navToggle}
+      >
+        <span class="hamburger__top-bun"></span>
+        <span class="hamburger__bottom-bun"></span>
+      </button>
+      <nav className="md:flex flex-col sm:flex-row p-4 space-x-5 hidden ">
         <Link href="#about">
           <a>About</a>
         </Link>
@@ -36,7 +49,7 @@ const Navbar = () => {
           <a>FAQ&rsquo;s</a>
         </Link>
       </nav>
-      <div>
+      <div className="lg:inline-block hidden">
         <button>Get you Ticket</button>
       </div>
     </header>
