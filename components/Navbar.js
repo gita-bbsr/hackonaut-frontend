@@ -1,37 +1,44 @@
 // import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect } from "react";
+
+import logo from "../public/logo/HACKONAUT.svg";
 
 const Navbar = () => {
   const onScreenChange = (e) => {
-    // if(e.)
-    log();
+    console.log(e);
   };
   return (
-    <header className="w-full text-center mx-auto">
-      <nav className="p-4 space-x-5 " style={{ display: "none" }}>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-        <Link href="/register">
-          <a>Registration</a>
-        </Link>
-        <Link href="#speaker">
-          <a>Speaker</a>
-        </Link>
-        <Link href="#session">
-          <a>Session</a>
-        </Link>
-        <Link href="#topics">
-          <a>Topics</a>
-        </Link>
+    <header className="w-full fixed flex justify-evenly items-center text-center mx-auto text-slate-200 p-2" style={{ display: "none" }}>
+      <div>
+        <span>
+          <Image src={logo} width={120} alt="logo" />
+        </span>
+      </div>
+      <nav className="p-4 space-x-5 ">
         <Link href="#about">
           <a>About</a>
         </Link>
-        <Link href="/contact-us">
-          <a>Contact Us</a>
+        <Link href="#topic">
+          <a>Topic</a>
+        </Link>
+        <Link href="#schedules">
+          <a>Schedule</a>
+        </Link>
+        <Link href="#prizes">
+          <a>Prizes</a>
+        </Link>
+        <Link href="#team">
+          <a>Team</a>
+        </Link>
+        <Link href="/faq">
+          <a>FAQ&rsquo;s</a>
         </Link>
       </nav>
+      <div>
+        <button>Get you Ticket</button>
+      </div>
     </header>
   );
 };

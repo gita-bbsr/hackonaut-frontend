@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
                 <Navbar />
                 <div>
                     {/* className="max-w-md mx-auto" */}
-                    <main className="container mx-auto">{children}</main>
+                    <main className="mx-auto">{children}</main>
                 </div>
                 <Footer />
             </section>

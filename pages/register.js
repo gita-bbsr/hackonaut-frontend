@@ -1,6 +1,7 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 export default function Registor() {
+    const router = useRouter();
     const [state, setState] = useState({
         fName: "",
         lName: "",
@@ -21,6 +22,7 @@ export default function Registor() {
     const onSubmit = (e) => {
         e.preventDefault();
         console.log(state);
+        router.push("/");
     };
     return (
         <>
@@ -96,7 +98,7 @@ export default function Registor() {
                         </select>
                     </label>
                     {/* button */}
-                    <button type="submit">Submit</button>
+                    <button type="submit">Submit ={">"} home page</button>
                 </form>
             </section>
         </>
