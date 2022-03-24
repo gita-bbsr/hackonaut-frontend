@@ -22,6 +22,7 @@
   label {
     @apply block;
   }
+
   h1 {
     @apply 2xl:text-9xl md:text-7xl sm:text-6xl text-5xl font-semibold;
   }
@@ -82,7 +83,7 @@ a {
 }
 
 .hamburger:hover [class*="-bun"] {
-  background: #eee;
+  background: #eeeff;
 }
 
 .hamburger__top-bun {

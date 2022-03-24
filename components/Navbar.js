@@ -26,8 +26,8 @@ const Navbar = () => {
         type="button"
         onClick={navToggle}
       >
-        <span class="hamburger__top-bun"></span>
-        <span class="hamburger__bottom-bun"></span>
+        <span className="hamburger__top-bun"></span>
+        <span className="hamburger__bottom-bun"></span>
       </button>
       <nav className="md:flex flex-col sm:flex-row p-4 space-x-5 hidden ">
         <Link href="#about">
@@ -50,7 +50,7 @@ const Navbar = () => {
         </Link>
       </nav>
       <div className="lg:inline-block hidden">
-        <button>Get you Ticket</button>
+        <button className="bg-gray-700">Get you Ticket</button>
       </div>
     </header>
   );

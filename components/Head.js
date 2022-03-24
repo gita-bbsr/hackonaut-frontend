@@ -4,9 +4,10 @@ import Gallery from "./Gallery.js";
 import lineImg from "../public/image/line.svg";
 const head = () => {
   return (
-    <section id="head-section" className="text-center lg:px-44 sm:px-28 px-8 py-44 bg-gradient-to-br from-[#12141D] to-slate-800 text-white">
+    <section id="head-section" className=" relative text-center lg:px-44 sm:px-28 px-8 py-52 bg-gradient-to-br from-[#12141D] to-slate-800 text-white">
+      <div className=" absolute xl:w-[15vw] xl:h-[15vw] w-[250px] h-[250px] lg:top-32 top-44 lg:left-[16%] bg-orange-400 rounded-full z-20"></div>
       <div className="relative flex flex-col items-center z-20 space-y-4">
-        <h1>
+        <h1 className="uppercase">
           Open Idea <span>Hackathon</span>
           <br /> of Odisha in <span>2022</span>
         </h1>
@@ -16,7 +17,7 @@ const head = () => {
         </p>
         <div className="md:space-x-7 space-y-4">
           <button className="md:inline block">Get Your Ticket</button>
-          <button>Check Topic</button>
+          <button className="bg-transparent border-4">Check Topic</button>
         </div>
       </div>
 

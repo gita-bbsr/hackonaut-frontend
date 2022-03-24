@@ -4,7 +4,7 @@ const about = () => {
   return (
     <section id="about" className="py-40 md:px-40 px-10 grid lg:grid-cols-2 grid-flow-row items-center gap-16">
       <div className="relative">
-        <div className=" w-[200px] absolute sm:bottom-6 sm:left-6 bottom-2 left-2 z-10 text-justify">
+        <div className=" w-[220px] absolute sm:bottom-6 sm:left-6 bottom-2 left-2 z-10 text-justify">
           <h4 className="text-white sm:p-8 p-6 bg-blue-600">It&rsquo;s a 24 hours and 3 day long Hackathon</h4>
         </div>
         <Image src={laptop} alt="laptop-image" />
