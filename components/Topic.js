@@ -35,10 +35,10 @@ const topicList = [
 const topic = () => {
   const topicItem = topicList.map((value) => <TopicBox key={value.id.toString()} data={value} />);
   return (
-    <section id="topic" className="text-center lg:p-28 sm:p-16 p-8 bg-slate-100">
+    <section id="topic" className="text-center lg:p-28 sm:p-16 p-8 bg-slate-100 space-y-6">
       <h2>Topics You Can Explore</h2>
       <p>we are Providing some of the area/domain in which you can bring your ideas.</p>
-      <div className="xl:p-40 grid grid-cols-12 row-auto gap-3">{topicItem}</div>
+      <div className="xl:p-20 py-16 grid grid-cols-12 row-auto gap-3">{topicItem}</div>
     </section>
   );
 };
@@ -54,7 +54,7 @@ function TopicBox(props) {
     );
   else
     return (
-      <div className="lg:col-start-3 lg:col-span-4 md:col-span-6 col-span-12 p-5 bg-white rounded-md">
+      <div className="lg:col-start-3 lg:col-span-4 md:col-span-6 col-span-12 p-5 max-h-max bg-white rounded-md">
         <h4>{value}</h4>
       </div>
     );

@@ -10,7 +10,7 @@ const gallery = () => {
     <div className="relative grid lg:grid-cols-3 my-40 z-20 gap-10">
       <div>
         <div className="w-full  mx-auto">
-          <Image src={lead} className="lead" />
+          <Image src={lead} alt="lead" />
         </div>
         <p>Lorem ipsum dolor sit amet consectetur.</p>
       </div>
@@ -23,7 +23,7 @@ const gallery = () => {
       </div>
       <div>
         <div className="w-full mx-auto">
-          <Image src={team} className="team" />
+          <Image src={team} alt="team" />
         </div>
 
         <p>Lorem ipsum dolor sit amet.</p>
