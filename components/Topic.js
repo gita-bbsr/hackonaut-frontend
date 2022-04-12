@@ -54,7 +54,7 @@ function TopicBox(props) {
     );
   else
     return (
-      <div className="lg:col-start-3 lg:col-span-4 md:col-span-6 col-span-12 p-5 bg-white rounded-md">
+      <div className="lg:col-start-3 lg:col-span-4 md:col-span-6 col-span-12 p-5 max-h-max bg-white rounded-md">
         <h4>{value}</h4>
       </div>
     );

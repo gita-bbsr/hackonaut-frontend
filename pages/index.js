@@ -8,7 +8,7 @@ import Topic from "../components/Topic.js";
 import Schedules from "../components/Schedules.js";
 import Team from "../components/Team.js";
 import Sponsors from "../components/Sponsors.js";
-import Prices from "../components/Prices.js";
+import Prices from "../components/Prizes.js";
 import FAQ from "../components/FAQ.js";
 
 import { motion } from "framer-motion";

@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 import logo from "../public/logo/logo-light.png";
 
 const Navbar = () => {
+  const router = useRouter();
   const [showMe, setShowMe] = useState(false);
   const onScreenChange = (e) => {
     console.log(e);
@@ -17,7 +19,11 @@ const Navbar = () => {
     <header className="w-full fixed flex lg:justify-evenly justify-between items-center text-center mx-auto text-slate-200 px-2 py-2 bg-[#12141D] z-40">
       <div>
         <span className="relative">
-          <Image src={logo} width={300} height={71} alt="logo" />
+          <Link href="#intro">
+            <a>
+              <Image src={logo} width={210} height={41} alt="logo" />
+            </a>
+          </Link>
         </span>
       </div>
       <button
@@ -45,12 +51,14 @@ const Navbar = () => {
         <Link href="#team">
           <a>Team</a>
         </Link>
-        <Link href="/faq">
+        <Link href="#faq">
           <a>FAQ&rsquo;s</a>
         </Link>
       </nav>
       <div className="lg:inline-block hidden">
-        <button className="bg-gray-700">Get you Ticket</button>
+        <button className="bg-gray-700 py-3 px-4" onClick={() => router.push("/register")}>
+          Get you Ticket
+        </button>
       </div>
     </header>
   );

@@ -53,10 +53,10 @@ a {
   box-sizing: border-box;
 }
 
-#head-section p {
+#intro p {
   @apply text-slate-400;
 }
-#head-section span {
+#intro span {
   @apply text-[#F6CB60];
 }
 

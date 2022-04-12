@@ -1,22 +1,22 @@
-const priceLists = [
+const prizeLists = [
   { id: 1, position: "No. 1 Leading Team", reward: "$7000", lists: ["ba", "ha", "ak", "sd", "ert"] },
   { id: 2, position: "No. 1 Leading Team", reward: "$5000", lists: ["ba", "ha", "ak", "sd", "ert"] },
   { id: 3, position: "No. 1 Leading Team", reward: "$3000", lists: ["ba", "ha", "ak", "sd", "ert"] },
 ];
 
-const price = () => {
-  const priceDeck = priceLists.map((priceList) => <PriceBox key={priceList.id} data={priceList} />);
+const prize = () => {
+  const prizeDeck = prizeLists.map((prizeList) => <PrizeBox key={prizeList.id} data={prizeList} />);
   return (
-    <section id="prices" className="text-center py-28 px-8">
-      <h2>Prices</h2>
-      <p>The Top will be reawarded with awesome prices</p>
-      {/* price deck section */}
-      <div className="flex flex-col sm:flex-row justify-around items-center gap-5 ">{priceDeck}</div>
+    <section id="prizes" className="text-center py-28 px-8">
+      <h2>Prizes</h2>
+      <p>The Top will be reawarded with awesome prizes</p>
+      {/* prize deck section */}
+      <div className="flex flex-col sm:flex-row justify-around items-center gap-5 ">{prizeDeck}</div>
     </section>
   );
 };
 
-const PriceBox = (props) => {
+const PrizeBox = (props) => {
   const { position, reward, lists } = props.data;
   const listName = lists.map((list) => <List key={list} data={list} />);
   return (
@@ -34,4 +34,4 @@ const List = (props) => {
   return <li>{props.data}</li>;
 };
 
-export default price;
+export default prize;
