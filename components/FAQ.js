@@ -30,7 +30,7 @@ const faq = () => {
         <div className="md:col-span-1 col-span-3 w-full space-y-4">
           <h3 className="font-bold text-3xl">Frequently asked questions</h3>
           <p className="text-base">
-            Can't find the answer you're looking for? <br /> Reach out to our <span className="font-bold text-indigo-600">customer support</span> team.
+            Can&rsquo;t find the answer you&rsquo;re looking for? <br /> Reach out to our <span className="font-bold text-indigo-600">customer support</span> team.
           </p>
         </div>
         {/* FAQ deck section */}

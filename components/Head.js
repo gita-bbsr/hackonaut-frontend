@@ -4,8 +4,14 @@ import Navbar from "./Navbar";
 
 import lineImg from "../public/image/line.svg";
 import { useRouter } from "next/router";
+
 const head = () => {
   const router = useRouter();
+
+  const getTicket = (e) => {
+    e.preventDefault();
+    router.push("/register");
+  };
 
   return (
     <>
@@ -22,7 +28,7 @@ const head = () => {
             adipisci, quo laborum ex!
           </p>
           <div className="md:space-x-7 space-y-4">
-            <button className="md:inline block" onClick={() => router.push("/register")}>
+            <button className="md:inline block" onClick={getTicket}>
               Get Your Ticket
             </button>
             <button className="bg-transparent border-4">Check Topic</button>
