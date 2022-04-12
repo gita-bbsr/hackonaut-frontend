@@ -11,7 +11,7 @@ export default function Registor() {
     college: "",
     semester: "",
     topic: "",
-    food: null,
+    food: "",
   });
 
   const onChange = (e) => {
@@ -44,8 +44,8 @@ export default function Registor() {
 
           <label htmlFor="gender">
             <p>Gender</p>
-            <select className="w-full" name="gender" id="gender" value={state.gender} onChange={onChange}>
-              <option value="" selected disabled hidden>
+            <select className="w-full" name="gender" id="gender" defaultValue={""} onChange={onChange}>
+              <option value={""} disabled hidden>
                 Choose here
               </option>
               <option value="M">M</option>
@@ -75,9 +75,9 @@ export default function Registor() {
           {/* topic */}
           <label htmlFor="topic">
             <p>Topic</p>
-            <select className="w-full" name="topic" id="topic" value={state.topic} onChange={onChange}>
+            <select className="w-full" name="topic" id="topic" defaultValue={""} onChange={onChange}>
               {/* incrase the number of topic */}
-              <option value="" selected disabled hidden>
+              <option value={""} disabled hidden>
                 Choose here
               </option>
 
@@ -88,9 +88,9 @@ export default function Registor() {
           </label>
           <label htmlFor="food">
             <p>Food Type</p>
-            <select className="w-full" name="food" id="food" value={state.food} onChange={onChange}>
+            <select className="w-full" name="food" id="food" defaultValue={""} onChange={onChange}>
               {/* incrase the number of topic */}
-              <option value="" selected disabled hidden>
+              <option value={""} disabled hidden>
                 Choose here
               </option>
               <option value="one">Veg</option>
